@@ -28,80 +28,88 @@
 
   <!-- Content -->
   <div class="legal-page">
-    <h1>Privacy Policy</h1>
-    <span class="updated">Last updated: February 2026</span>
+    <h1>Privacy Policy (GDPR / DSGVO)</h1>
+    <span class="updated">Last updated: February 23, 2026</span>
 
-    <p>This Privacy Policy describes how Shelter Fall ("we", "our", or "the app") handles information when you use our mobile application. We are committed to protecting your privacy and being transparent about our practices.</p>
+    <p>This Privacy Policy explains how Shelter Fall processes data when you use the iOS app. We aim to keep data processing minimal and transparent.</p>
 
-    <h2>1. Information We Collect</h2>
-    
-    <h3>Information We Do NOT Collect</h3>
-    <p>Shelter Fall does not require account creation, login, or registration. We do not collect, store, or transmit any of the following:</p>
+    <h2>1. Controller (Verantwortlicher)</h2>
+    <p>Controller for Shelter Fall:<br>
+      Michel Picker<br>
+      Email: <a href="mailto:mip@gmx.biz">mip@gmx.biz</a>
+    </p>
+
+    <h2>2. What We Collect</h2>
+    <h3>Data we process directly</h3>
     <ul>
-      <li>Personal identification information (name, email, phone number)</li>
-      <li>Location data</li>
-      <li>Contacts or address book data</li>
-      <li>Photos, camera, or microphone data</li>
-      <li>Health or fitness data</li>
-      <li>Financial information (beyond what Apple processes for in-app purchases)</li>
+      <li>Gameplay progress and settings stored on your device (for example UserDefaults and local save files).</li>
+      <li>Optional iCloud sync data, if you use iCloud on your Apple device and sync is enabled.</li>
     </ul>
 
-    <h3>Game Data Stored Locally</h3>
-    <p>Shelter Fall stores your game progress, settings, and preferences locally on your device using standard iOS storage mechanisms (UserDefaults and local files). This data never leaves your device and is not transmitted to any server.</p>
+    <h3>Data we do not collect directly</h3>
+    <p>We do not require account registration and we do not run our own analytics or profile database for Shelter Fall users.</p>
 
-    <h3>In-App Purchases</h3>
-    <p>Shelter Fall offers an optional in-app purchase to remove advertisements. All purchase transactions are processed entirely by Apple through the App Store. We do not have access to your payment information.</p>
+    <h3>In-app purchase processing</h3>
+    <p>The optional "Remove Ads" purchase is processed by Apple (StoreKit/App Store). We do not receive your payment card or bank details.</p>
 
-    <h2>2. Advertising</h2>
-    <p>Shelter Fall displays advertisements through Google AdMob. If you have not purchased the "Remove Ads" option, AdMob may collect certain information to serve ads. This may include:</p>
+    <h2>3. Advertising, UMP Consent, ATT, and IDFA</h2>
+    <p>If ads are enabled (no "Remove Ads" purchase), Shelter Fall uses Google AdMob.</p>
     <ul>
-      <li>Identifiers (including Device ID / IDFA, only when you grant ATT permission)</li>
-      <li>IP address</li>
-      <li>General device information (model, OS version)</li>
-      <li>Ad interaction data (impressions, clicks)</li>
-    </ul>
-    <p>Before tracking occurs, Shelter Fall requests permission through Apple's App Tracking Transparency (ATT) framework. You can choose to allow or deny tracking. If you deny tracking, the app does not access IDFA and AdMob serves non-personalized/contextual ads.</p>
-    <p>For more information about how Google handles data, please review the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
-
-    <h2>3. App Tracking Transparency</h2>
-    <p>On iOS 14.5 and later, Shelter Fall uses Apple's App Tracking Transparency framework to request your permission before accessing the Identifier for Advertisers (IDFA). This identifier is used solely for ad personalization by Google AdMob.</p>
-    <p>You can change your tracking preference at any time in your device's Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
-
-    <h2>4. App Store Privacy Label Alignment</h2>
-    <p>To match our App Store Connect privacy disclosure:</p>
-    <ul>
-      <li><strong>Data used for tracking:</strong> Identifiers &rarr; Device ID (IDFA), when ATT permission is granted.</li>
-      <li><strong>Tracking purpose:</strong> Third-party advertising via Google AdMob.</li>
-      <li><strong>When ATT is denied:</strong> No IDFA access; ads may still be measured/attributed using privacy-preserving frameworks such as SKAdNetwork.</li>
-    </ul>
-    <p>Shelter Fall itself does not run first-party cross-app tracking systems.</p>
-
-    <h2>5. Third-Party Services</h2>
-    <p>Shelter Fall uses the following third-party services:</p>
-    <ul>
-      <li><strong>Google AdMob</strong> — For serving advertisements. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
-      <li><strong>Apple App Store / StoreKit</strong> — For processing in-app purchases. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+      <li>For users in the EEA, UK, and Switzerland, the app uses Google's User Messaging Platform (UMP) to show consent messages and collect/update privacy choices.</li>
+      <li>On iOS, the app requests tracking permission via Apple's App Tracking Transparency (ATT) before accessing IDFA.</li>
+      <li>If ATT is denied, the app does not access IDFA. Ads may still be shown in a non-personalized/contextual way.</li>
+      <li>You can review consent choices in the app: Settings &gt; Privacy &amp; Ads &gt; Review Ad Consent.</li>
     </ul>
 
-    <h2>6. Children's Privacy</h2>
-    <p>Shelter Fall is rated 12+ and is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through a third-party service integrated in the app, please contact us so we can take appropriate action.</p>
+    <h2>4. Categories of Data Processed by Ad Providers</h2>
+    <p>When ads are shown, Google AdMob may process data such as:</p>
+    <ul>
+      <li>Identifiers (including IDFA only if ATT permission is granted)</li>
+      <li>IP address and approximate location derived from IP</li>
+      <li>Device and app information (model, OS, app version)</li>
+      <li>Ad performance and interaction events (impressions, clicks)</li>
+    </ul>
 
-    <h2>7. Data Retention</h2>
-    <p>Since we do not collect personal data, there is no data retention policy on our part. Game data stored locally on your device persists until you delete the app or clear its data through iOS Settings.</p>
+    <h2>5. Legal Bases under GDPR (Art. 6 DSGVO)</h2>
+    <ul>
+      <li><strong>Art. 6(1)(a) GDPR (consent):</strong> Personalized advertising and any tracking that requires consent.</li>
+      <li><strong>Art. 6(1)(b) GDPR (performance of contract):</strong> Core gameplay and local save functionality.</li>
+      <li><strong>Art. 6(1)(f) GDPR (legitimate interests):</strong> Basic app security/stability and non-personalized ad delivery where applicable.</li>
+    </ul>
+    <p>You can withdraw consent at any time with effect for the future (see section 8).</p>
 
-    <h2>8. Data Security</h2>
-    <p>All game data is stored locally on your device and protected by iOS's built-in security features, including device encryption and app sandboxing.</p>
+    <h2>6. Third-Party Recipients</h2>
+    <ul>
+      <li><strong>Google AdMob / Google LLC</strong> (ads and consent tools): <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><strong>Apple (App Store, StoreKit, iCloud)</strong>: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+    </ul>
 
-    <h2>9. Your Rights</h2>
-    <p>Since we do not collect or store any personal data on our servers, there is no personal data for us to provide, modify, or delete. You can delete all locally stored game data by uninstalling the app.</p>
-    <p>For data collected by third-party services (Google AdMob), please refer to their respective privacy policies for information about your rights.</p>
+    <h2>7. International Transfers</h2>
+    <p>Some processing by third-party providers (especially Google) may occur outside the EU/EEA, including the United States. Such providers state they use appropriate transfer mechanisms (for example Standard Contractual Clauses) where required by law.</p>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this page periodically.</p>
+    <h2>8. Your Rights under GDPR / DSGVO</h2>
+    <p>If GDPR applies to you, you may have rights to access, rectification, erasure, restriction, objection, and data portability, plus the right to withdraw consent at any time.</p>
+    <ul>
+      <li>Withdraw ad consent in-app: Settings &gt; Privacy &amp; Ads &gt; Review Ad Consent</li>
+      <li>Change ATT setting in iOS: Settings &gt; Privacy &amp; Security &gt; Tracking</li>
+      <li>For Google-processed ad data, rights can also be exercised via Google according to their policy.</li>
+    </ul>
+    <p>You also have the right to lodge a complaint with your competent data protection supervisory authority.</p>
 
-    <h2>11. Contact Us</h2>
-    <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
-    <p><a href="mailto:mip@gmx.biz">mip@gmx.biz</a></p>
+    <h2>9. Data Retention</h2>
+    <ul>
+      <li>Local game data remains on your device until you delete the app or reset app data.</li>
+      <li>Retention periods for ad-related data are determined by Google according to their policies.</li>
+    </ul>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Shelter Fall is not directed to children under 13. If you believe that personal data of a child has been processed via third-party services in connection with the app, contact us and we will review the request.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this policy to reflect legal, technical, or product changes. The "Last updated" date at the top shows the current version.</p>
+
+    <h2>12. Contact</h2>
+    <p>If you have privacy questions, contact: <a href="mailto:mip@gmx.biz">mip@gmx.biz</a></p>
   </div>
 
   <!-- Footer -->
