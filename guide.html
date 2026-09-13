@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Guide — Shelter Fall</title>
+<meta name="description" content="How Shelter Fall works: jobs, resources, buildings, research, defenses, night commands, events and scenarios — and how to stop dying on day five.">
+<link rel="canonical" href="https://shelterfall.minh.systems/guide">
+<link rel="apple-touch-icon" sizes="180x180" href="images/app-icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/app-icon-32.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><img src="images/app-icon-512.png" alt=""> Shelter Fall</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guide.html" aria-current="page">Guide</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <h1>Game Guide</h1>
+  <span class="updated">For Shelter Fall 1.15</span>
+
+  <p>Shelter Fall is a run-based survival strategy game. One run is twenty days long. Each day you
+     plan; each night you defend. This page explains every system, then ends with the mistakes that
+     kill most early runs.</p>
+
+  <h2 id="firstrun">Your first run, step by step</h2>
+  <div class="steps">
+    <div class="step"><h3>Start on Normal, Standard scenario</h3>
+      <p>Five survivors, balanced supplies, no special rules. Easy gives you six survivors if you want a gentler start.</p></div>
+    <div class="step"><h3>Assign every survivor a job</h3>
+      <p>You cannot end the day while anyone is idle. Tap a survivor to pick a job, or use <strong>Auto-Assign</strong> — but read the next section before you rely on it.</p></div>
+    <div class="step"><h3>Read the forecast before ending the day</h3>
+      <p>Above the End Day button you get tomorrow's resource change and up to three warnings. If it says you are short on food or ammo, fix it now, not tomorrow.</p></div>
+    <div class="step"><h3>Answer the evening event</h3>
+      <p>One event fires each evening. Costs are printed on the button, and risky options show their odds. Later days draw heavier events.</p></div>
+    <div class="step"><h3>Fight the night</h3>
+      <p>Watch it, speed it up with the multiplier, or skip it. Skipping resolves the fight from your actual defensive strength — it is not a free pass.</p></div>
+    <div class="step"><h3>Read the morning report</h3>
+      <p>Kills, breaches, shelter damage, ammo spent, who got hurt. This is your feedback loop: breaches mean your perimeter is too thin.</p></div>
+  </div>
+
+  <h2 id="resources">Resources</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Resource</th><th>What it does</th><th>Running out</th></tr></thead>
+      <tbody>
+        <tr><td><strong>🍖 Food</strong></td><td>Eaten every day, one per survivor.</td><td>Survivors starve and lose health.</td></tr>
+        <tr><td><strong>🪵 Materials</strong></td><td>Builds and upgrades defenses and buildings.</td><td>Nothing gets built or repaired.</td></tr>
+        <tr><td><strong>🔫 Ammo</strong></td><td>Spent by defenders during the night.</td><td>Night damage drops heavily.</td></tr>
+        <tr><td><strong>⚡ Power</strong></td><td>Runs research and automated defenses.</td><td>Research halves, turrets go offline.</td></tr>
+        <tr><td><strong>💊 Medicine</strong></td><td>Heals the wounded and treats disease.</td><td>Injuries do not recover.</td></tr>
+        <tr><td><strong>❤️ Morale</strong></td><td>Group state, 0–100. Drives work output.</td><td>At zero you get one grace day, then the shelter falls.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <p><strong>Spending what you do not have is not free.</strong> If a choice costs more than you
+       hold, the work still happens but the shortfall comes out of morale — and the option warns you
+       before you pick it.</p>
+  </div>
+
+  <h2 id="jobs">Jobs</h2>
+  <p>Every survivor does one job per day. Traits and perks change how well they do it.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Job</th><th>What it produces</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Gather Food / Materials / Ammo</strong></td><td>The three scavenging jobs. Your income.</td></tr>
+        <tr><td><strong>Build Defenses</strong></td><td>Spends materials to raise and upgrade the perimeter.</td></tr>
+        <tr><td><strong>Repair</strong></td><td>Restores damaged defenses and shelter health.</td></tr>
+        <tr><td><strong>Defend</strong></td><td>Fights in the night scene. At least one is strongly advised.</td></tr>
+        <tr><td><strong>Research</strong></td><td>Advances the current technology.</td></tr>
+        <tr><td><strong>Heal</strong></td><td>Treats the wounded, spending medicine.</td></tr>
+        <tr><td><strong>Scout</strong></td><td>Reveals map tiles and finds caches.</td></tr>
+        <tr><td><strong>Rest</strong></td><td>Recovers health and lifts morale.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn">
+    <p><strong>Auto-Assign is not a strategy.</strong> It spreads people across gathering and keeps
+       one defender. It will not build your perimeter and it will not repair after a bad night. If
+       you only ever tap Auto-Assign and End Day, expect the shelter to fall around day five.</p>
+  </div>
+
+  <h2 id="defenses">Defenses</h2>
+  <p>Five types, each upgradeable to level 5, and each can be placed on a chosen flank — left,
+     centre or right. Enemies that get past them damage the shelter directly.</p>
+  <ul>
+    <li><strong>Barricade</strong> — cheap bulk. Absorbs hits, deals no damage.</li>
+    <li><strong>Wall</strong> — the heavy blocker. Your main hit-point buffer.</li>
+    <li><strong>Trap</strong> — damages enemies that reach it.</li>
+    <li><strong>Turret</strong> — automated damage, needs power to fire.</li>
+    <li><strong>Generator</strong> — produces power for research and turrets.</li>
+  </ul>
+  <p>Shelter health only drops once attackers get through. A destroyed shelter ends the run
+     <em>even if every survivor is alive</em> — which is the most common way a promising run dies.</p>
+
+  <h2 id="night">The night defense</h2>
+  <p>Nights run in real time. Waves scale with the day you have reached, and boss nights arrive
+     every fifth night from day 10 and on the final night.</p>
+
+  <h3>Enemy types</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Enemy</th><th>Behaviour</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Walker</strong></td><td>Slow and common. The baseline threat.</td></tr>
+        <tr><td><strong>Runner</strong></td><td>Fast and fragile. Reaches the wall before you are ready.</td></tr>
+        <tr><td><strong>Raider</strong></td><td>Human, armed, hits harder than a walker. Appears from day 4.</td></tr>
+        <tr><td><strong>Tank</strong></td><td>Heavy armour, slow. Soaks an enormous amount of fire.</td></tr>
+        <tr><td><strong>Brute</strong></td><td>High damage. Breaks defenses quickly.</td></tr>
+        <tr><td><strong>Boss</strong></td><td>Night-defining. Plan the whole day around it.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Night commands — new in 1.15</h3>
+  <p>You get three orders per night. They are the difference between watching a loss and steering
+     out of one.</p>
+  <div class="steps">
+    <div class="step"><h3>Rally</h3>
+      <p>A burst of extra damage from your defenders. Best saved for a wave that is about to break through.</p></div>
+    <div class="step"><h3>Patch</h3>
+      <p>Emergency repair on your weakest defense mid-fight. Use it on the piece that is about to fall, not the one already gone.</p></div>
+    <div class="step"><h3>Flare</h3>
+      <p>Dropped on a chosen point, hitting a cluster of enemies. Worth waiting a few seconds for the group to bunch up.</p></div>
+  </div>
+
+  <h2 id="research">Research and buildings</h2>
+  <p>Twenty-five technologies and ten buildings. Research needs a survivor on the job and
+     progresses per day; with no power it still advances, at half speed.</p>
+  <p>Buildings change what is possible rather than giving flat bonuses — a <strong>Greenhouse</strong>
+     or <strong>Med Bay</strong> produces food and medicine on its own, a <strong>Workshop</strong>
+     lets you craft medicine, a <strong>Watchtower</strong> improves the night, and
+     <strong>Storage</strong> raises your caps.</p>
+
+  <h2 id="events">Events</h2>
+  <p>One event each evening, drawn from 79. Some are quiet character moments; others are turning
+     points. As the run goes on, the draw shifts toward consequential ones.</p>
+  <ul>
+    <li>Every cost is printed on the button before you choose, health included.</li>
+    <li>Risky options show the exact odds — a dice icon with a percentage.</li>
+    <li>When a gamble fails, the result says so plainly and shows what it actually cost.</li>
+  </ul>
+
+  <h2 id="scenarios">Scenarios</h2>
+  <p>Five scenarios change a rule of the game. Any of them can be combined with any difficulty.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Scenario</th><th>Rule change</th><th>How to approach it</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Standard</strong></td><td>None.</td><td>The baseline twenty-day run.</td></tr>
+        <tr><td><strong>Last Stand</strong></td><td>No gathering ammo; crates drop from kills.</td><td>Kill efficiently — every shot has to earn its replacement.</td></tr>
+        <tr><td><strong>Exodus</strong></td><td>Shelter loses 5 HP per day.</td><td>Keep a repairer working permanently.</td></tr>
+        <tr><td><strong>Plague</strong></td><td>All survivors start sick.</td><td>Rush the cure tech; keep medicine stocked.</td></tr>
+        <tr><td><strong>The Siege</strong></td><td>Double waves, extra starting walls.</td><td>Lean on walls and turrets; ammo is the bottleneck.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="meta">Progress between runs</h2>
+  <p>Meta points are earned every run, win or lose, and buy permanent upgrades. Once you have
+     outgrown them, <strong>Prestige</strong> resets for a deeper bonus — with a confirmation step
+     first. Survive day 20 and you can continue into <strong>Endless Mode</strong>, which still
+     earns points, kills and best-day records.</p>
+
+  <h2 id="mistakes">Five mistakes that end early runs</h2>
+  <ol>
+    <li><strong>No perimeter.</strong> Gathering all day feels productive until night four. Put someone on Build Defenses from day one.</li>
+    <li><strong>Never repairing.</strong> Damaged defenses do not heal on their own, and a 27/50 barricade fails fast.</li>
+    <li><strong>Ignoring ammo.</strong> At zero ammo your defenders barely scratch anything, no matter how many there are.</li>
+    <li><strong>Letting morale slide.</strong> At zero you get one grace day and then lose, regardless of supplies.</li>
+    <li><strong>Treating the shelter as a health bar.</strong> It is the loss condition. Every breach is permanent damage until somebody repairs it.</li>
+  </ol>
+
+  <div class="callout">
+    <p>Still stuck? <a href="support.html">Support</a> has troubleshooting, save and purchase help,
+       or email <a href="mailto:mip@gmx.biz">mip@gmx.biz</a>.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="presskit.html">Press Kit</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Shelter Fall. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

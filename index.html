@@ -1,251 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shelter Fall — Post-Apocalyptic Survival Strategy Game</title>
-  <meta name="description" content="Build. Defend. Survive. Lead survivors through 20 brutal days in a post-apocalyptic wasteland. Free strategy game for iOS.">
-  <meta name="keywords" content="shelter fall, survival game, strategy, post-apocalyptic, roguelike, iOS game, tower defense, base building">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Shelter Fall — Post-Apocalyptic Survival">
-  <meta property="og:description" content="Build your shelter. Defend the night. Survive the apocalypse. Free on the App Store.">
-  <meta property="og:image" content="images/app-icon-512.png">
-  <meta property="og:url" content="https://pinkysworld.github.io/ShelterFall/">
-  <meta property="og:type" content="website">
-  <meta name="apple-itunes-app" content="app-id=6759238842">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Shelter Fall — Post-Apocalyptic Survival">
-  <meta name="twitter:description" content="Build your shelter. Defend the night. Survive the apocalypse.">
-  <meta name="twitter:image" content="images/app-icon-512.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shelter Fall — Post-Apocalyptic Survival Strategy for iOS</title>
+<meta name="description" content="Build your shelter, command the night defense, and survive 20 brutal days. A free post-apocalyptic survival strategy roguelike for iPhone and iPad.">
+<meta name="keywords" content="shelter fall, survival game, strategy, post-apocalyptic, roguelike, iOS game, base building, zombie defense">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/app-icon-180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/app-icon-32.png">
-  
-  <link rel="stylesheet" href="css/style.css">
+<meta property="og:title" content="Shelter Fall — Post-Apocalyptic Survival Strategy">
+<meta property="og:description" content="Build your shelter. Command the night. Survive 20 days. Free on the App Store.">
+<meta property="og:image" content="https://shelterfall.minh.systems/images/app-icon-512.png">
+<meta property="og:url" content="https://shelterfall.minh.systems/">
+<meta property="og:type" content="website">
+<meta name="apple-itunes-app" content="app-id=6759238842">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shelter Fall — Post-Apocalyptic Survival Strategy">
+<meta name="twitter:description" content="Build your shelter. Command the night. Survive 20 days.">
+<meta name="twitter:image" content="https://shelterfall.minh.systems/images/app-icon-512.png">
+
+<link rel="canonical" href="https://shelterfall.minh.systems/">
+<link rel="apple-touch-icon" sizes="180x180" href="images/app-icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/app-icon-32.png">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <img src="images/app-icon-512.png" alt="Shelter Fall Icon">
-        Shelter Fall
-      </a>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#gameplay">Gameplay</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><img src="images/app-icon-512.png" alt=""> Shelter Fall</a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="guide.html">Guide</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <img src="images/app-icon-512.png" alt="Shelter Fall app icon" class="hero-icon">
+  <span class="kicker">Version 1.15 — Night Commands</span>
+  <h1>Shelter Fall</h1>
+  <p class="tagline">The world ended. A handful of survivors look to you for leadership.
+    Build the shelter, command the defense, and keep them alive for twenty brutal days.</p>
+  <a href="https://apps.apple.com/app/id6759238842" class="app-store-badge" aria-label="Download Shelter Fall on the App Store">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+  </a>
+  <p class="hero-note">Free to play · No paywalls · Plays fully offline · iOS 17+</p>
+</section>
+
+<div class="stats-bar">
+  <div class="stat"><span class="stat-number">20</span><span class="stat-label">Day Runs</span></div>
+  <div class="stat"><span class="stat-number">79</span><span class="stat-label">Events</span></div>
+  <div class="stat"><span class="stat-number">25</span><span class="stat-label">Technologies</span></div>
+  <div class="stat"><span class="stat-number">10</span><span class="stat-label">Buildings</span></div>
+  <div class="stat"><span class="stat-number">5</span><span class="stat-label">Scenarios</span></div>
+  <div class="stat"><span class="stat-number">6</span><span class="stat-label">Enemy Types</span></div>
+</div>
+
+<section class="section" id="shots">
+  <span class="eyebrow">Inside the shelter</span>
+  <h2 class="section-title">See It Running</h2>
+  <p class="section-subtitle">Days are for planning. Nights are fought in real time, and you are not a spectator.</p>
+  <div class="shots">
+    <figure class="shot"><img src="images/shots/night.jpg" alt="Night defense: enemies approaching the shelter while turrets and walls hold" loading="lazy" width="600" height="1103"><figcaption>Night defense, fought in real time</figcaption></figure>
+    <figure class="shot"><img src="images/shots/survivors.jpg" alt="Survivor roster with jobs assigned for the day" loading="lazy" width="600" height="1012"><figcaption>Every survivor gets a job</figcaption></figure>
+    <figure class="shot"><img src="images/shots/event.jpg" alt="An evening event showing choices with their full costs and the odds of a risky option" loading="lazy" width="600" height="1012"><figcaption>Costs and odds, before you commit</figcaption></figure>
+    <figure class="shot"><img src="images/shots/base.jpg" alt="Base screen listing current defenses and their health" loading="lazy" width="600" height="1012"><figcaption>Build and upgrade the perimeter</figcaption></figure>
+    <figure class="shot"><img src="images/shots/tech.jpg" alt="Research screen with available technologies" loading="lazy" width="600" height="1012"><figcaption>Research twenty-five technologies</figcaption></figure>
+    <figure class="shot"><img src="images/shots/victory.jpg" alt="Victory screen after surviving all twenty days" loading="lazy" width="600" height="1077"><figcaption>Or make it to day twenty</figcaption></figure>
+  </div>
+</section>
+
+<div class="section-alt">
+<section class="section" id="features">
+  <span class="eyebrow">Core loop</span>
+  <h2 class="section-title">What You Actually Do</h2>
+  <p class="section-subtitle">A full strategy game in runs short enough to finish in a sitting — and different every time.</p>
+
+  <div class="grid grid-3">
+    <div class="card">
+      <span class="icon">🎖️</span><span class="tag">New in 1.15</span>
+      <h3>Command the Night</h3>
+      <p>Three tactical orders during the defense: rally your defenders for a damage surge, emergency-patch your weakest wall, or drop a flare onto a cluster of enemies. The night is no longer something you just watch.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🏗️</span>
+      <h3>Build the Shelter</h3>
+      <p>Ten buildings — greenhouse, med bay, workshop, watchtower, barracks and more. Each one changes what your survivors can do the next morning.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🛡️</span>
+      <h3>Hold the Perimeter</h3>
+      <p>Five defense types — barricade, trap, turret, generator, wall — upgradeable to level 5, and you choose which flank each one holds.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🔬</span>
+      <h3>Research Under Pressure</h3>
+      <p>Twenty-five technologies, from Efficient Gathering to Night Vision and Auto Turrets. With no power, research still runs — at half speed, by lamplight.</p>
+    </div>
+    <div class="card">
+      <span class="icon">📜</span>
+      <h3>79 Events, Real Stakes</h3>
+      <p>Raiders at the gate, a sealed crate, a rival faction's ultimatum. Risky choices show their odds before you commit, and every price — including health — is on the button.</p>
+    </div>
+    <div class="card">
+      <span class="icon">👥</span>
+      <h3>People, Not Units</h3>
+      <p>Survivors have traits, moods, levels and perks. They get hurt, they get sick, they get tired — and losing one is felt for the rest of the run.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="section">
+  <span class="eyebrow">The cycle</span>
+  <h2 class="section-title">How a Day Goes</h2>
+  <p class="section-subtitle">Plan in daylight. Live with it after dark.</p>
+
+  <div class="split">
+    <div>
+      <h3>☀️ Daytime — plan and prepare</h3>
+      <p>Assign every survivor before you end the day. The forecast tells you what tomorrow costs and warns you what is about to go wrong.</p>
+      <ul>
+        <li>Balance six resources: food, materials, ammo, power, medicine, morale</li>
+        <li>Build and upgrade ten building types</li>
+        <li>Research a tree of twenty-five technologies</li>
+        <li>Scout the wasteland map for caches, dangers and new survivors</li>
+        <li>Send expeditions that pay out over several days</li>
       </ul>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <img src="images/app-icon-512.png" alt="Shelter Fall" class="hero-icon">
-    <h1>Shelter Fall</h1>
-    <p class="tagline">Build your shelter. Defend the night. Survive the apocalypse. Lead your survivors through 20 brutal days — every decision counts.</p>
-    <a href="https://apps.apple.com/app/id6759238842" class="app-store-badge" aria-label="Download Shelter Fall on the App Store">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-    </a>
-  </section>
-
-  <!-- Stats Bar -->
-  <div class="stats-bar">
-    <div class="stat">
-      <span class="stat-number">20</span>
-      <span class="stat-label">Day Survival Runs</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">25</span>
-      <span class="stat-label">Technologies</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">10</span>
-      <span class="stat-label">Buildings</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">30+</span>
-      <span class="stat-label">Random Events</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">14</span>
-      <span class="stat-label">Achievements</span>
+    <div>
+      <h3>🌙 Nighttime — hold the line</h3>
+      <p>When dark falls the attack begins in a real-time scene. Turrets fire, traps trigger, walls break. You spend your three orders and hope it was enough.</p>
+      <ul>
+        <li>Six enemy types: walkers, runners, raiders, tanks, brutes and bosses</li>
+        <li>Boss nights every fifth night from day 10, and on every final night</li>
+        <li>Waves scale with the day you have reached</li>
+        <li>Watch it, speed it up, or skip and let it resolve on your real strength</li>
+      </ul>
     </div>
   </div>
+</section>
 
-  <!-- Features -->
-  <section id="features">
-    <div class="section">
-      <h2 class="section-title">Core Features</h2>
-      <p class="section-subtitle">A deep survival strategy experience packed into roguelike runs where no two games play out the same.</p>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <span class="feature-icon">🏗️</span>
-          <h3>Build Your Shelter</h3>
-          <p>Construct 10 unique buildings — Greenhouses, Med Bays, Workshops, Watchtowers, Barracks, and more. Each provides vital survival bonuses.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🛡️</span>
-          <h3>Defend the Night</h3>
-          <p>Place Barricades, Traps, Turrets, Generators, and Walls — each upgradeable to level 5. Watch real-time SpriteKit battles unfold.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🔬</span>
-          <h3>Research Technologies</h3>
-          <p>Unlock 25 technologies from Efficient Gathering to Night Vision, Auto Turrets, and the desperate Last Stand protocol.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🗺️</span>
-          <h3>Scout the Map</h3>
-          <p>Explore surrounding zones on a procedural map. Discover resource caches, encounter dangers, and find new survivors.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">📜</span>
-          <h3>30+ Random Events</h3>
-          <p>Face wandering survivors, supply caches, moral dilemmas, dangerous storms, and choices that shape your colony's fate.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">👥</span>
-          <h3>Manage Survivors</h3>
-          <p>Recruit, assign, and protect your people. Balance scavenging, building, research, and guard duty to keep everyone alive.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gameplay Details -->
-  <div class="section-alt">
-    <section id="gameplay" class="section">
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-subtitle">Each run is a tense 20-day journey. Survive the days, endure the nights.</p>
-
-      <div class="gameplay-grid">
-        <div class="gameplay-text">
-          <h3>☀️ Daytime — Plan & Prepare</h3>
-          <p>During the day, assign your survivors to critical tasks. Gather food, materials, and ammo. Build and upgrade structures. Research new technologies. Scout the map for supplies.</p>
-          <ul>
-            <li>Manage 5 resources: Food, Materials, Ammo, Power, Morale</li>
-            <li>Construct and upgrade 10 building types</li>
-            <li>Research from a tree of 25 technologies</li>
-            <li>Respond to random events and make tough choices</li>
-          </ul>
-        </div>
-        <div class="gameplay-visual">
-          <div class="emoji-grid">🏠🏥🔧<br>🌾💧⚡<br>👤👤👤</div>
-          <p style="color: var(--text-muted); margin-top: 16px; font-size: 0.85rem;">Your shelter grows with each decision</p>
-        </div>
-      </div>
-
-      <div class="gameplay-grid" style="margin-top: 60px;">
-        <div class="gameplay-visual">
-          <div class="emoji-grid">🧟🧟🧟<br>💥🔫💥<br>🧱🧱🧱</div>
-          <p style="color: var(--text-muted); margin-top: 16px; font-size: 0.85rem;">Defenses hold the line at night</p>
-        </div>
-        <div class="gameplay-text">
-          <h3>🌙 Nighttime — Defend & Survive</h3>
-          <p>When darkness falls, hostile creatures attack your shelter. Your defenses activate in real-time SpriteKit battle scenes. Turrets fire, traps trigger, and walls hold — or break.</p>
-          <ul>
-            <li>Face Walkers, Runners, Tanks, Brutes, and Bosses</li>
-            <li>5 defense types, each upgradeable to level 5</li>
-            <li>Enemies grow stronger every night</li>
-            <li>Survive all 20 nights to win the run</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Difficulty -->
-  <section class="section">
-    <h2 class="section-title">Four Difficulty Levels</h2>
-    <p class="section-subtitle">From beginner-friendly to brutally unforgiving.</p>
-
-    <table class="difficulty-table">
-      <thead>
-        <tr>
-          <th>Difficulty</th>
-          <th>Starting Survivors</th>
-          <th>Challenge</th>
-        </tr>
-      </thead>
+<div class="section-alt">
+<section class="section" id="scenarios">
+  <span class="eyebrow">Five ways to play</span>
+  <h2 class="section-title">Scenarios</h2>
+  <p class="section-subtitle">Each one rewrites a rule of the game, not just the numbers.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Scenario</th><th>The twist</th></tr></thead>
       <tbody>
-        <tr>
-          <td>☘️ Easy</td>
-          <td>6 Survivors</td>
-          <td>Learn the ropes with a forgiving start</td>
-        </tr>
-        <tr>
-          <td>⚔️ Normal</td>
-          <td>5 Survivors</td>
-          <td>The intended experience — balanced and tense</td>
-        </tr>
-        <tr>
-          <td>💀 Hard</td>
-          <td>3 Survivors</td>
-          <td>Every resource matters, every loss hurts</td>
-        </tr>
-        <tr>
-          <td>☠️ Apocalypse</td>
-          <td>2 Survivors</td>
-          <td>The ultimate test — only the best survive</td>
-        </tr>
+        <tr><td><strong>🏠 Standard</strong></td><td>The classic survival run. Twenty days, no special rules.</td></tr>
+        <tr><td><strong>⚔️ Last Stand</strong></td><td>Heavy weapons, no resupply. You cannot gather ammo — crates drop from kills.</td></tr>
+        <tr><td><strong>🚶 Exodus</strong></td><td>Your shelter is failing and loses health every day. Keep it standing until evacuation.</td></tr>
+        <tr><td><strong>☠️ Plague</strong></td><td>Every survivor starts sick. Research the cure before it takes them.</td></tr>
+        <tr><td><strong>🏰 The Siege</strong></td><td>Massive walls, endless hordes. Double enemy waves, extra walls to start.</td></tr>
       </tbody>
     </table>
-  </section>
+  </div>
+</section>
+</div>
 
-  <!-- Meta Progression -->
-  <div class="section-alt">
-    <div class="section">
-      <h2 class="section-title">Meta-Progression</h2>
-      <p class="section-subtitle">Even when your shelter falls, progress carries forward.</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <span class="feature-icon">🏆</span>
-          <h3>14 Achievements</h3>
-          <p>From surviving your first dawn to completing a perfect night with zero damage — track your mastery across every run.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">📈</span>
-          <h3>Permanent Upgrades</h3>
-          <p>Unlock bonuses that carry across runs. Each failure teaches you something and makes the next attempt slightly easier.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🎯</span>
-          <h3>Difficulty Mastery</h3>
-          <p>Master Easy, then tackle Normal, Hard, and ultimately Apocalypse. Each difficulty is a new test of strategy and planning.</p>
-        </div>
-      </div>
+<section class="section">
+  <span class="eyebrow">Pick your pressure</span>
+  <h2 class="section-title">Four Difficulties</h2>
+  <p class="section-subtitle">Every difficulty runs the full twenty days — harder means thinner margins, not a shorter game.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Difficulty</th><th>Survivors</th><th>What changes</th></tr></thead>
+      <tbody>
+        <tr><td><strong>☘️ Easy</strong></td><td>6</td><td>Generous supplies. Good for learning the loop.</td></tr>
+        <tr><td><strong>⚔️ Normal</strong></td><td>5</td><td>Balanced pressure — the intended experience.</td></tr>
+        <tr><td><strong>💀 Hard</strong></td><td>3</td><td>Scarce supplies and 50% larger waves.</td></tr>
+        <tr><td><strong>☠️ Apocalypse</strong></td><td>2</td><td>Almost nothing to start, and double waves.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="section-alt">
+<section class="section">
+  <span class="eyebrow">After the fall</span>
+  <h2 class="section-title">Progress Survives the Run</h2>
+  <p class="section-subtitle">Losing is part of it. Every run leaves something behind.</p>
+  <div class="grid grid-3">
+    <div class="card"><span class="icon">🏆</span><h3>14 Achievements</h3>
+      <p>From your first dawn to a flawless night with the shelter untouched.</p></div>
+    <div class="card"><span class="icon">📈</span><h3>Meta Points &amp; Prestige</h3>
+      <p>Earn meta points every run, spend them on permanent upgrades, and prestige for a deeper reset once you have outgrown them.</p></div>
+    <div class="card"><span class="icon">♾️</span><h3>Endless Mode</h3>
+      <p>Survive day 20 and keep going. Endless runs still earn meta points, kills and best-day records.</p></div>
+  </div>
+</section>
+</div>
+
+<section class="section">
+  <span class="eyebrow">Fair by design</span>
+  <h2 class="section-title">Free, Without the Catch</h2>
+  <p class="section-subtitle">There is one optional purchase, and it does not sell you an advantage.</p>
+  <div class="grid grid-2">
+    <div class="card">
+      <span class="icon">🎮</span><h3>Everything is playable free</h3>
+      <p>No energy timers, no paywalled content, no premium currency. Every scenario, difficulty, technology and building is available without spending anything.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🚫</span><h3>Remove Ads — one time</h3>
+      <p>A single non-consumable purchase removes every banner, interstitial and app-open ad. Supporters also get the second-chance revive and supply drop directly, with no video to sit through.</p>
+      <p style="margin-top:12px"><a href="support.html#iap">How to buy or restore it →</a></p>
     </div>
   </div>
+  <div class="callout">
+    <p><strong>No pay-to-win.</strong> Remove Ads changes how the game is funded, not how it plays. A paying player and a free player face exactly the same twenty nights.</p>
+  </div>
+</section>
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <h2>Ready to Survive?</h2>
-    <p>Download Shelter Fall for free and find out if you have what it takes.</p>
-    <a href="https://apps.apple.com/app/id6759238842" class="app-store-badge" aria-label="Download Shelter Fall on the App Store">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-    </a>
-  </section>
+<section class="cta">
+  <h2>Twenty days. How far do you get?</h2>
+  <p>Free on the App Store for iPhone and iPad.</p>
+  <a href="https://apps.apple.com/app/id6759238842" class="app-store-badge" aria-label="Download Shelter Fall on the App Store">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+  </a>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="support.html">Support</a>
-        <a href="presskit.html">Press Kit</a>
-      </div>
-      <p class="footer-copy">&copy; 2025 Shelter Fall. All rights reserved.</p>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="guide.html">Game Guide</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="presskit.html">Press Kit</a>
     </div>
-  </footer>
+    <p class="footer-copy">&copy; 2026 Shelter Fall. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
