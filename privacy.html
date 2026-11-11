@@ -32,7 +32,7 @@
   <!-- Content -->
   <div class="page">
     <h1>Privacy Policy (GDPR / DSGVO)</h1>
-    <span class="updated">Last updated: February 23, 2026</span>
+    <span class="updated">Last updated: November 11, 2026</span>
 
     <p>This Privacy Policy explains how Shelter Fall processes data when you use the iOS app. We aim to keep data processing minimal and transparent.</p>
 
@@ -45,29 +45,30 @@
     <h2>2. What We Collect</h2>
     <h3>Data we process directly</h3>
     <ul>
-      <li>Gameplay progress and settings stored on your device (for example UserDefaults and local save files).</li>
-      <li>Optional iCloud sync data, if you use iCloud on your Apple device and sync is enabled.</li>
+      <li>Gameplay progress and settings stored on your device (for example UserDefaults on iOS, app storage on Android, and local save files).</li>
+      <li>Optional iCloud sync data, if you use iCloud on your Apple device and sync is enabled (iOS only; the Android version has no cloud sync).</li>
     </ul>
 
     <h3>Data we do not collect directly</h3>
     <p>We do not require account registration and we do not run our own analytics or profile database for Shelter Fall users.</p>
 
     <h3>In-app purchase processing</h3>
-    <p>The optional "Remove Ads" purchase is processed by Apple (StoreKit/App Store). We do not receive your payment card or bank details.</p>
+    <p>The optional "Remove Ads" purchase is processed by Apple (StoreKit/App Store) on iOS and by Google Play Billing on Android. We do not receive your payment card or bank details. On Android the app receives a purchase token from Google Play to verify and restore the purchase.</p>
 
-    <h2>3. Advertising, UMP Consent, ATT, and IDFA</h2>
+    <h2>3. Advertising, UMP Consent, ATT, IDFA, and Android Advertising ID</h2>
     <p>If ads are enabled (no "Remove Ads" purchase), Shelter Fall uses Google AdMob.</p>
     <ul>
       <li>For users in the EEA, UK, and Switzerland, the app uses Google's User Messaging Platform (UMP) to show consent messages and collect/update privacy choices.</li>
       <li>On iOS, the app requests tracking permission via Apple's App Tracking Transparency (ATT) before accessing IDFA.</li>
       <li>If ATT is denied, the app does not access IDFA. Ads may still be shown in a non-personalized/contextual way.</li>
+      <li>On Android, Google AdMob may use the Android Advertising ID (AAID) in line with your consent choices. You can reset or delete it in Android settings (Settings &gt; Privacy &gt; Ads, or Settings &gt; Google &gt; Ads, depending on the device).</li>
       <li>You can review consent choices in the app: Settings &gt; Privacy &amp; Ads &gt; Review Ad Consent.</li>
     </ul>
 
     <h2>4. Categories of Data Processed by Ad Providers</h2>
     <p>When ads are shown, Google AdMob may process data such as:</p>
     <ul>
-      <li>Identifiers (including IDFA only if ATT permission is granted)</li>
+      <li>Identifiers (IDFA on iOS only if ATT permission is granted; Android Advertising ID on Android)</li>
       <li>IP address and approximate location derived from IP</li>
       <li>Device and app information (model, OS, app version)</li>
       <li>Ad performance and interaction events (impressions, clicks)</li>
@@ -84,7 +85,8 @@
     <h2>6. Third-Party Recipients</h2>
     <ul>
       <li><strong>Google AdMob / Google LLC</strong> (ads and consent tools): <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-      <li><strong>Apple (App Store, StoreKit, iCloud)</strong>: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+      <li><strong>Apple (App Store, StoreKit, iCloud)</strong>, iOS version: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+      <li><strong>Google Play (distribution and Play Billing)</strong>, Android version: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
     </ul>
 
     <h2>7. International Transfers</h2>
@@ -95,6 +97,7 @@
     <ul>
       <li>Withdraw ad consent in-app: Settings &gt; Privacy &amp; Ads &gt; Review Ad Consent</li>
       <li>Change ATT setting in iOS: Settings &gt; Privacy &amp; Security &gt; Tracking</li>
+      <li>Reset or delete the Advertising ID on Android: Settings &gt; Privacy &gt; Ads (or Settings &gt; Google &gt; Ads)</li>
       <li>For Google-processed ad data, rights can also be exercised via Google according to their policy.</li>
     </ul>
     <p>You also have the right to lodge a complaint with your competent data protection supervisory authority.</p>
